@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart7
+title: Use your Neural Network
+content: |
+  #
+showEditor: true
+editors:
+  - course1/unit1/lesson3/lessonpart7/final.py
