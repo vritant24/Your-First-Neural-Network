@@ -11,14 +11,8 @@ contacts:
 files:
   - path: course1/unit1/lesson2/lessonpart1/exponents.py
     content: "# add your code here"
-  - path: course1/unit1/lesson3/lessonpart2/build2.py
-    content: "class NeuralNetwork():\r
-
-      \    def __init__(self):\r
-
-      \        print(\"initialized class\")"
   - path: course1/unit1/lesson3/lessonpart3/build3.py
-    content: "import math\r
+    content: "from math import exp\r
 
       \r
 
@@ -33,5 +27,11 @@ files:
       \    def __sigmoid(self, x):\r
 
       \        return 1 / (1 + exp(-x))"
+  - path: course1/unit1/lesson3/lessonpart2/build2.py
+    content: "class NeuralNetwork():\r
+
+      \    def __init__(self):\r
+
+      \        print(\"initialized class\")"
 units:
   - unit1/index.yml

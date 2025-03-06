@@ -65,5 +65,6 @@ content: >
 
   Over here, we'll expect `x` to be the calculation result of
   `__sigmoid(x)` (the method we added before).
+showEditor: true
 editors:
   - course1/unit1/lesson3/lessonpart3/build3.py
