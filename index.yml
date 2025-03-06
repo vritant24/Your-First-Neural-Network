@@ -17,5 +17,21 @@ files:
       \    def __init__(self):\r
 
       \        print(\"initialized class\")"
+  - path: course1/unit1/lesson3/lessonpart3/build3.py
+    content: "import math\r
+
+      \r
+
+      class NeuralNetwork():\r
+
+      \    def __init__(self):\r
+
+      \        print(\"initialized class\")\r
+
+      \    \r
+
+      \    def __sigmoid(self, x):\r
+
+      \        return 1 / (1 + exp(-x))"
 units:
   - unit1/index.yml

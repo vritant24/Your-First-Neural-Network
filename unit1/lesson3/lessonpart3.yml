@@ -50,8 +50,6 @@ content: >
   ```
 
 
-
-
   ## Time to code
 
 
@@ -67,3 +65,5 @@ content: >
 
   Over here, we'll expect `x` to be the calculation result of
   `__sigmoid(x)` (the method we added before).
+editors:
+  - course1/unit1/lesson3/lessonpart3/build3.py
