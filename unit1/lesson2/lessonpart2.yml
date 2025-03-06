@@ -1,4 +1,87 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: Arrays
-content: "# Enter your content here"
+content: >+
+  ## What is an Array?
+
+
+  An array is a collection of items. The idea is to store multiple items of the
+  same type together.
+
+
+  ## Why Use Arrays?
+
+
+  Arrays are useful because they allow you to store multiple values in a single
+  variable, which can be more efficient and easier to manage than using separate
+  variables for each value. They are particularly useful when you need to
+  perform the same operation on multiple values, such as iterating through a
+  list of numbers to find the sum.
+
+
+  ## Creating Arrays in Python
+
+
+  In Python, arrays can be created using lists. Here, we will focus on using
+  lists, which are more commonly used in Python.
+
+
+  ```
+
+  # Creating an array (list) in Python
+
+  numbers = [1, 2, 3, 4, 5]
+
+  print(numbers)
+
+
+  ```
+
+
+  ## Accessing Array Elements
+
+
+  You can access elements in an array by their index. In Python, indexing starts
+  at 0, which means the first element is at index 0, the second element is at
+  index 1, and so on.
+
+
+  ```
+
+  # Accessing elements in an array
+
+  first_element = numbers[0]
+
+  second_element = numbers[1]
+
+  print("First element:", first_element)
+
+  print("Second element:", second_element)
+
+
+  ```
+
+
+  ## Modifying Array Elements
+
+
+  You can also modify elements in an array by assigning a new value to a
+  specific index.
+
+
+  ```
+
+  # Modifying elements in an array
+
+  numbers[0] = 10
+
+  numbers[1] = 20
+
+  print(numbers)
+
+
+  ```
+
+showEditor: true
+editors:
+  - course1/unit1/lesson2/lessonpart2/arrays.py
