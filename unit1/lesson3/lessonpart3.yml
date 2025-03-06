@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart3
+title: Add a Sigmoid Derivative function
+content: >
+  ### What is a Sigmoid Derivative?
+
+
+  The sigmoid derivative is a special function that helps us understand how the
+  sigmoid function changes. Think of it as a way to measure how steep or flat
+  the sigmoid curve is at any point.
+
+
+  Imagine you are riding a bike up and down hills. The sigmoid function is like
+  the path you are riding on, and the sigmoid derivative tells you how steep the
+  hill is at any point. If the hill is steep, you need to pedal harder (adjust
+  the weights more). If the hill is flat, you don't need to pedal as hard
+  (adjust the weights less).
+
+
+  ### Why Do We Need It?
+
+
+  When we train a neural network, we need to adjust the weights to make better
+  predictions. The sigmoid derivative helps us figure out how much to adjust
+  these weights. It's like a guide that tells us how confident we are about the
+  current weights.
+
+
+  ### How Does It Work?
+
+
+  **Sigmoid Function**: First, remember that the sigmoid function squishes any
+  number into a value between 0 and 1.
+
+
+  **Derivative**: The derivative of the sigmoid function tells us how much the
+  output value changes when we change the input value a little bit.
+
+
+  ### Formula
+
+
+  The formula for the sigmoid derivative is:
+
+
+  ```
+
+  sigmoid_derivative(x) = sigmoid(x) * (1 - sigmoid(x))
+
+  ```
+
+
+
+
+  ## Time to code
+
+
+  Add the following method to your class
+
+
+  ```
+
+  def __sigmoid_derivative(self, x):
+      return x * (1 - x)
+  ```
+
+
+  Over here, we'll expect `x` to be the calculation result of
+  `__sigmoid(x)` (the method we added before).
