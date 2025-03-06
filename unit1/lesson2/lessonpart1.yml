@@ -69,11 +69,13 @@ content: >
   ## Practice Problems
 
 
-  1. Calculate 3^4
+  1. Calculate `3^4`
 
-  2. Calculate 5^2
+  2. Calculate `5^2`
 
-  3. Calculate 10^0
+  3. Calculate `10^0`
 
-  4. Calculate 2^(−3)
+  4. Calculate `2^(−3)`
 showEditor: true
+editors:
+  - course1/unit1/lesson2/lessonpart1/exponents.py
