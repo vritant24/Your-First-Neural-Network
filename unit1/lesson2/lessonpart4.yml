@@ -104,5 +104,6 @@ content: >
 
 
   So, the dot product of matrices `A`* *and `B`** is 70.
+showEditor: true
 editors:
   - course1/unit1/lesson2/lessonpart4/dot_product.py
