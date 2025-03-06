@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: Exponents
+content: >
+  ## Introduction
+
+
+  Exponentials are a fundamental concept in mathematics, especially in algebra.
+  They are used to represent repeated multiplication of a number by itself. In
+  this lesson, we will learn what exponentials are and how to work with them
+  using Python.
+
+
+  ## What is an Exponential?
+
+
+  An exponential is a mathematical expression that represents repeated
+  multiplication of the same factor. It is written in the form: a^n
+
+
+  Where:
+
+
+  * *a* is the base
+
+  * *n* is the exponent
+
+
+  For example, 2^3 means 2×2×2, which equals 8.
+
+
+  ## Using Python to Calculate Exponentials
+
+
+  Python provides a simple way to calculate exponentials using the `**` operator
+  or the `pow()` function.
+
+
+  ### Example 1: Using the `**` Operator
+
+
+  ```
+
+  # Calculate 2^3 using the ** operator
+
+  result = 2 ** 3
+
+  print(result)  # Output: 8
+
+
+  ```
+
+
+  ### Example 2: Using the `pow()` Function
+
+
+  ```
+
+  # Calculate 2^3 using the pow() function
+
+  result = pow(2, 3)
+
+  print(result)  # Output: 8
+
+
+  ```
+
+
+  ## Practice Problems
+
+
+  1. Calculate 3^4
+
+  2. Calculate 5^2
+
+  3. Calculate 10^0
+
+  4. Calculate 2^(−3)
+showContent: true
+showEditor: true
+showTerminal: false
+showExplorer: false
+editors:
+  - type: python
+    path: course1/unit1/lesson2/lessonpart1/exponents.py
