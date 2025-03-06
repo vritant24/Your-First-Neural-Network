@@ -1,7 +1,12 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart1
 title: Comleted Neural Network
-content: "# Enter your content here"
+content: |
+  ## The Complete Code
+
+
+
+  For your reference, here's the complete code.
 showEditor: true
 editors:
   - course1/unit1/lesson4/lessonpart1/NeuralNetwork.py
