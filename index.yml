@@ -9,6 +9,8 @@ contacts:
     pictureUrl: https://avatars.githubusercontent.com/u/13074644?v=4
     homePageUrl: https://github.com/vritant24
 files:
+  - path: course1/unit1/lesson2/lessonpart1/exponents.py
+    content: "# add your code here"
   - path: course1/unit1/lesson3/lessonpart2/build2.py
     content: "class NeuralNetwork():\r
 
@@ -68,14 +70,6 @@ files:
 
       \        print(\"initialized class\")\r
 
-      \        # We model a single neuron, with 3 input connections and 1 output
-      connection.\r
-
-      \        # We assign random weights to a 3 x 1 matrix, with values in the
-      range -1 to 1\r
-
-      \        # and mean 0.\r
-
       \        self.synaptic_weights = 2 * random.random((3, 1)) - 1\r
 
       \    \r
@@ -126,15 +120,11 @@ files:
 
       \    def think(self, inputs):\r
 
-      \        # Pass inputs through our neural network (our single neuron).\r
-
-      \        return self.__sigmoid(dot(inputs, self.synaptic_weights))\r
+      \        return self.__sigmoid(self.dot(inputs, self.synaptic_weights))\r
 
       \r
 
       \    "
-  - path: course1/unit1/lesson2/lessonpart1/exponents.py
-    content: "# add your code here"
   - path: course1/unit1/lesson3/lessonpart6/build5.py
     content: "from math import exp\r
 

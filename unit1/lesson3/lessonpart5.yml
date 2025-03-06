@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart5
-title: Add a train function
+title: Add a Train function
 content: >
   ### What is the `train` Method?
 
