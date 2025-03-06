@@ -1,8 +1,160 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart7
 title: Use your Neural Network
-content: |
-  #
+content: >+
+  ## Add the main method
+
+
+  After the Neural Network class, add the following line
+
+
+  ```
+
+  if __name__ == "__main__":
+
+  ```
+
+
+  This line checks if the script is being run directly (not imported as a
+  module). If it is, the code inside this block will be executed. 
+
+
+
+
+  ## **Initialize the Neural Network**
+
+
+  Here, we create an instance of the `NeuralNetwork` class. This means we are
+  creating our neural network with one neuron.
+
+
+  ```
+
+  # Initialize a single neuron neural network.
+
+  neural_network = NeuralNetwork()
+
+  ```
+
+
+
+
+  ## **Define the Training Set**
+
+
+  We define the training set, which consists of inputs and the correct outputs.
+  The inputs are examples that the neural network will learn from, and the
+  outputs are the correct answers for those examples.
+
+
+  ```
+
+  # The training set. We have 4 examples, each consisting of 3 input values
+
+  # and 1 output value.
+
+  training_set_inputs = [[0, 0, 1], [1, 1, 1], [1, 0, 1], [0, 1, 1]]
+
+  training_set_outputs = [,,,]
+
+  ```
+
+
+
+
+  ## **Train the Neural Network**
+
+
+  We train the neural network using the training set. The neural network will go
+  through the training set 10,000 times, making small adjustments to the
+  synaptic weights each time to improve its predictions.
+
+
+  ```
+
+  # Train the neural network using a training set.
+
+  # Do it 10,000 times and make small adjustments each time.
+
+  neural_network.train(training_set_inputs, training_set_outputs, 10000)
+
+  ```
+
+
+
+
+  ## **Print New Synaptic Weights**
+
+
+  After training, we print the new synaptic weights. These weights have been
+  adjusted based on the training set to make better predictions.
+
+
+  ```
+
+  print "New synaptic weights after training: "
+
+  print neural_network.synaptic_weights
+
+  ```
+
+
+
+
+  ## **Test the Neural Network**
+
+
+  We test the neural network with a new input `[1, 0, 0]` to see what it
+  predicts. The `think` function will use the trained synaptic weights to make a
+  prediction.
+
+
+  ```
+
+  # Test the neural network with a new situation.
+
+  print "Considering new situation [1, 0, 0] -> ?: "
+
+  print neural_network.think([[1, 0, 0]])
+
+  ```
+
+
+
+
+  ### Putting It All Together
+
+
+  Here's the complete main method:
+
+
+  ```
+
+  if __name__ == "__main__":
+
+      # Initialize a single neuron neural network.
+      neural_network = NeuralNetwork()
+
+      print("Random starting synaptic weights: ")
+      print(neural_network.synaptic_weights)
+
+      # The training set. We have 4 examples, each consisting of 3 input values
+      # and 1 output value.
+      training_set_inputs = [[0, 0, 1], [1, 1, 1], [1, 0, 1], [0, 1, 1]]
+      training_set_outputs = [,,,]
+
+      # Train the neural network using a training set.
+      # Do it 10,000 times and make small adjustments each time.
+      neural_network.train(training_set_inputs, training_set_outputs, 10000)
+
+      print("New synaptic weights after training: ")
+      print(neural_network.synaptic_weights)
+
+      # Test the neural network with a new situation.
+      print("Considering new situation [1, 0, 0] -> ?: ")
+      print(neural_network.think([[1, 0, 0]]))
+  ```
+
 showEditor: true
 editors:
   - course1/unit1/lesson3/lessonpart7/final.py
