@@ -1,6 +1,54 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart2
 title: Add a Sigmoid Function
-content: "# Enter your content here"
+content: >
+  ### What is a Sigmoid Function?
+
+
+  The sigmoid function is a special mathematical function that helps us in
+  machine learning, especially in neural networks. Think of it as a way to
+  squish any number into a range between 0 and 1.
+
+
+  Imagine you have a magic box that takes any number and gives you a value
+  between 0 and 1. If you put in a big number, the box gives you a value close
+  to 1. If you put in a small number, the box gives you a value close to 0. This
+  magic box is like the sigmoid function!
+
+
+  ### How Does It Work?
+
+
+  The sigmoid function takes any number (positive or negative) and transforms it
+  into a value between 0 and 1. Here's the formula:
+
+
+  ```
+
+  sigmoid(x) = 1 / (1 + e^(-x))
+
+  ```
+
+
+  But don't worry about the formula too much. Just remember that it turns big
+  numbers into values close to 1 and small numbers into values close to 0.
+
+
+  ### Why Do We Use It?
+
+
+  **Range**: The sigmoid function makes sure that the output is always between 0
+  and 1. This is useful when we want to predict probabilities, like the chance
+  of rain tomorrow.
+
+
+  **Smooth Curve**: The sigmoid function creates a smooth S-shaped curve. This
+  helps the neural network learn and make better predictions.
+
+
+  **Adjusting Weights**: The sigmoid function's curve helps us adjust the
+  weights in the neural network during training. This means the network can
+  learn from its mistakes and improve over time.
+showEditor: true
 editors:
   - course1/unit1/lesson3/lessonpart2/build2.py
