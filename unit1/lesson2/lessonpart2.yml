@@ -2,10 +2,3 @@
 id: lessonpart2
 title: Arrays
 content: "# Enter your content here"
-showContent: true
-showEditor: false
-showTerminal: false
-showExplorer: false
-editors:
-  - type: python
-    path: course1/unit1/lesson2/lessonpart2/arrays.py

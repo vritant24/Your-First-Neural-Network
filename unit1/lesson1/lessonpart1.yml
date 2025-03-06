@@ -65,7 +65,3 @@ content: >
   language.
 
   * **Game Playing**: Teaching computers to play games like chess and Go.
-showContent: true
-showEditor: false
-showTerminal: false
-showExplorer: false

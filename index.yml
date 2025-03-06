@@ -8,30 +8,5 @@ contacts:
   - displayName: Vritant Bhardwaj
     pictureUrl: https://avatars.githubusercontent.com/u/13074644?v=4
     homePageUrl: https://github.com/vritant24
-files:
-  - path: course1/unit1/lesson2/lessonpart3/matrix.py
-    content: "# Matrix addition\r
-
-      matrix2 = [[7, 8, 9], [10, 11, 12]]\r
-
-      sum_matrix = []\r
-
-      for i in range(len(matrix)):\r
-
-      \  for j in range(len(matrix1[0])):\r
-
-      \    sum_row = []\r
-
-      \    for k in range(len(matrix2)):\r
-
-      \      sum_row.append(matrix[i][j] + matrix2[i][j])\r
-
-      \    sum_matrix(sum_row)\r
-
-      print(\"Sum of matrices:\")\r
-
-      for row in sum_matrix:\r
-
-      \    print(row)"
 units:
   - unit1/index.yml

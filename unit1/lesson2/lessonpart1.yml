@@ -76,10 +76,4 @@ content: >
   3. Calculate 10^0
 
   4. Calculate 2^(−3)
-showContent: true
 showEditor: true
-showTerminal: false
-showExplorer: false
-editors:
-  - type: python
-    path: course1/unit1/lesson2/lessonpart1/exponents.py
