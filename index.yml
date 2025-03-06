@@ -11,5 +11,13 @@ contacts:
 files:
   - path: course1/unit1/lesson2/lessonpart1/exponents.py
     content: "# add your code here"
+  - path: course1/unit1/lesson3/lessonpart2/build2.py
+    content: "class NeuralNetwork():\r
+
+      \    def __init__(self):\r
+
+      \        random.seed(1)\r
+
+      \        self.synaptic_weights = 2 * random.random((3, 1)) - 1"
 units:
   - unit1/index.yml

@@ -2,3 +2,5 @@
 id: lessonpart2
 title: Add a Sigmoid Function
 content: "# Enter your content here"
+editors:
+  - course1/unit1/lesson3/lessonpart2/build2.py
