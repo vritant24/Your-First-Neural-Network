@@ -1,4 +1,102 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart3
 title: Matrices
-content: "# Enter your content here"
+content: >
+  ## Introduction
+
+
+  Welcome to today's lesson on matrices in Python! In this lesson, we will learn
+  what matrices are, why they are useful, and how to work with them in Python.
+  By the end of this lesson, you will be able to create, access, and modify
+  matrices in Python.
+
+
+  ## What is a Matrix?
+
+
+  A matrix is a two-dimensional array, which means it is a collection of items
+  arranged in rows and columns. Each item in a matrix can be accessed using two
+  indices: one for the row and one for the column.
+
+
+  ## Why Use Matrices?
+
+
+  Matrices are useful because they allow you to store and manipulate data in a
+  structured way. They are particularly useful in fields such as mathematics,
+  physics, engineering, and computer science for tasks such as solving systems
+  of linear equations, performing transformations, and representing graphs.
+
+
+  ## Creating Matrices in Python
+
+
+  In Python, matrices can be created using lists of lists. Each inner list
+  represents a row in the matrix.
+
+
+  ```
+
+  # Creating a matrix in Python
+
+  matrix = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]
+  ]
+
+  print(matrix)
+
+
+  ```
+
+
+  ## Accessing Matrix Elements
+
+
+  You can access elements in a matrix by specifying the row and column indices.
+  In Python, indexing starts at 0, which means the first row is at index 0, the
+  second row is at index 1, and so on.
+
+
+  ```
+
+  # Accessing elements in a matrix
+
+  first_element = matrix[0][0]
+
+  second_element = matrix[0][1]
+
+  print("First element:", first_element)
+
+  print("Second element:", second_element)
+
+
+  ```
+
+
+  ## Modifying Matrix Elements
+
+
+  You can also modify elements in a matrix by assigning a new value to a
+  specific row and column index.
+
+
+  ```
+
+  # Modifying elements in a matrix
+
+  matrix[0][2] = 10
+
+  matrix[1][1] = 20
+
+  print(matrix)
+
+
+  ```
+
+
+  ## Conclusion
+showEditor: true
+editors:
+  - course1/unit1/lesson2/lessonpart3/matrix.py
