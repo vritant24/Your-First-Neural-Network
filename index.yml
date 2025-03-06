@@ -181,5 +181,89 @@ files:
       \        return result\r
 
       \    "
+  - path: course1/unit1/lesson3/lessonpart7/final.py
+    content: "from math import exp, random\r
+
+      \r
+
+      class NeuralNetwork():\r
+
+      \    def __init__(self):\r
+
+      \        print(\"initialized class\")\r
+
+      \        self.synaptic_weights = 2 * random.random((3, 1)) - 1\r
+
+      \    \r
+
+      \    def __sigmoid(self, x):\r
+
+      \        return 1 / (1 + exp(-x))\r
+
+      \    \r
+
+      \    def __sigmoid_derivative(self, x):\r
+
+      \        return x * (1 - x)\r
+
+      \r
+
+      \    def dot(self, a, b):\r
+
+      \        # Ensure the matrices can be multiplied\r
+
+      \        if len(a) != len(b):\r
+
+      \            raise ValueError(\"Matrices cannot be multiplied\")\r
+
+      \r
+
+      \        # Initialize the result matrix with zeros\r
+
+      \        result = [[0 for _ in range(len(b))] for _ in range(len(a))]\r
+
+      \r
+
+      \        # Perform matrix multiplication\r
+
+      \        for i in range(len(a)):\r
+
+      \            for j in range(len(b)):\r
+
+      \                for k in range(len(b)):\r
+
+      \                    result[i][j] += a[i][k] * b[k][j]\r
+
+      \r
+
+      \        return result\r
+
+      \    \r
+
+      \    def think(self, inputs):\r
+
+      \        return self.__sigmoid(self.dot(inputs, self.synaptic_weights))\r
+
+      \    \r
+
+      \    def train(self, training_set_inputs, training_set_outputs,
+      number_of_training_iterations):\r
+
+      \        for iteration in range(number_of_training_iterations):\r
+
+      \            output = self.think(training_set_inputs)\r
+
+      \            error = [[training_set_outputs[i] - output[i]] for i in
+      range(len(training_set_outputs))]\r
+
+      \            adjustment = self.dot(self.transpose(training_set_inputs),
+      self.multiply(error, self.__sigmoid_derivative(output)))\r
+
+      \            self.synaptic_weights = [[self.synaptic_weights[i] +
+      adjustment[i]] for i in range(len(self.synaptic_weights))]\r
+
+      \r
+
+      \    "
 units:
   - unit1/index.yml
