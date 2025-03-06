@@ -9,8 +9,6 @@ contacts:
     pictureUrl: https://avatars.githubusercontent.com/u/13074644?v=4
     homePageUrl: https://github.com/vritant24
 files:
-  - path: course1/unit1/lesson2/lessonpart1/exponents.py
-    content: "# add your code here"
   - path: course1/unit1/lesson3/lessonpart2/build2.py
     content: "class NeuralNetwork():\r
 
@@ -135,5 +133,7 @@ files:
       \r
 
       \    "
+  - path: course1/unit1/lesson2/lessonpart1/exponents.py
+    content: "# add your code here"
 units:
   - unit1/index.yml
