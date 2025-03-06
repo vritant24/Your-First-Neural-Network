@@ -1,7 +1,36 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart4
 title: Add a dot product method
-content: "# Enter your content here"
+content: >
+  ## Time to code
+
+
+  We've already learnt what a dot product is, so let's get to coding straight
+  away!
+
+
+  let's define the `dot` method inside the `NeuralNetwork` class. This method
+  will take two matrices (lists of lists) as input and return their dot product.
+
+
+  ```
+
+  def dot(self, a, b):
+      # Ensure the matrices can be multiplied
+      if len(a) != len(b):
+          raise ValueError("Matrices cannot be multiplied")
+
+      # Initialize the result matrix with zeros
+      result = [[0 for _ in range(len(b))] for _ in range(len(a))]
+
+      # Perform matrix multiplication
+      for i in range(len(a)):
+          for j in range(len(b)):
+              for k in range(len(b)):
+                  result[i][j] += a[i][k] * b[k][j]
+
+      return result
+  ```
 showEditor: true
 editors:
   - course1/unit1/lesson3/lessonpart4/build4.py
