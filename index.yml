@@ -33,5 +33,31 @@ files:
       \    def __init__(self):\r
 
       \        print(\"initialized class\")"
+  - path: course1/unit1/lesson3/lessonpart4/build4.py
+    content: "from math import exp\r
+
+      \r
+
+      class NeuralNetwork():\r
+
+      \    def __init__(self):\r
+
+      \        print(\"initialized class\")\r
+
+      \    \r
+
+      \    def __sigmoid(self, x):\r
+
+      \        return 1 / (1 + exp(-x))\r
+
+      \    \r
+
+      \    def __sigmoid_derivative(self, x):\r
+
+      \        return x * (1 - x)\r
+
+      \r
+
+      \    "
 units:
   - unit1/index.yml
