@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart1
+title: What is a Neural Network?
+content: >
+  ## Introduction
+
+
+  A neural network is a type of artificial intelligence that is designed to
+  mimic the way the human brain works. Just like our brains use neurons to
+  process information, neural networks use artificial neurons to perform tasks
+  such as recognizing patterns, making decisions, and learning from data.
+
+
+  ## Basic Structure
+
+
+  A neural network is made up of layers of artificial neurons. These layers
+  include:
+
+
+  * **Input Layer**: This is where the network receives information. Each neuron
+  in this layer represents a feature or piece of data.
+
+  * **Hidden Layers**: These layers process the information received from the
+  input layer. There can be multiple hidden layers, each performing different
+  transformations on the data.
+
+  * **Output Layer**: This layer produces the final result or prediction based
+  on the processed information.
+
+  *
+
+
+  ## How It Works
+
+
+  Neural networks learn by adjusting the connections between neurons, known as
+  weights. Here's a simplified explanation of how it works:
+
+
+  1. **Initialization**: The network starts with random weights.
+
+  2. **Forward Propagation**: Data is passed through the network, layer by
+  layer, until it reaches the output layer.
+
+  3. **Loss Calculation**: The network's prediction is compared to the actual
+  result, and a loss (or error) is calculated.
+
+  4. **Backward Propagation**: The network adjusts the weights to minimize the
+  loss. This process is repeated many times, allowing the network to learn and
+  improve its predictions.
+
+
+  ## Applications
+
+
+  Neural networks are used in a variety of applications, including:
+
+
+  * **Image Recognition**: Identifying objects in photos and videos.
+
+  * **Speech Recognition**: Converting spoken language into text.
+
+  * **Natural Language Processing**: Understanding and generating human
+  language.
+
+  * **Game Playing**: Teaching computers to play games like chess and Go.
+showContent: true
+showEditor: false
+showTerminal: false
+showExplorer: false
