@@ -11,6 +11,12 @@ contacts:
 files:
   - path: course1/unit1/lesson2/lessonpart1/exponents.py
     content: "# add your code here"
+  - path: course1/unit1/lesson3/lessonpart2/build2.py
+    content: "class NeuralNetwork():\r
+
+      \    def __init__(self):\r
+
+      \        print(\"initialized class\")"
   - path: course1/unit1/lesson3/lessonpart3/build3.py
     content: "from math import exp\r
 
@@ -27,12 +33,6 @@ files:
       \    def __sigmoid(self, x):\r
 
       \        return 1 / (1 + exp(-x))"
-  - path: course1/unit1/lesson3/lessonpart2/build2.py
-    content: "class NeuralNetwork():\r
-
-      \    def __init__(self):\r
-
-      \        print(\"initialized class\")"
   - path: course1/unit1/lesson3/lessonpart4/build4.py
     content: "from math import exp\r
 
@@ -55,6 +55,82 @@ files:
       \    def __sigmoid_derivative(self, x):\r
 
       \        return x * (1 - x)\r
+
+      \r
+
+      \    "
+  - path: course1/unit1/lesson3/lessonpart5/build5.py
+    content: "from math import exp, random\r
+
+      \r
+
+      class NeuralNetwork():\r
+
+      \    def __init__(self):\r
+
+      \        print(\"initialized class\")\r
+
+      \        # We model a single neuron, with 3 input connections and 1 output
+      connection.\r
+
+      \        # We assign random weights to a 3 x 1 matrix, with values in the
+      range -1 to 1\r
+
+      \        # and mean 0.\r
+
+      \        self.synaptic_weights = 2 * random.random((3, 1)) - 1\r
+
+      \    \r
+
+      \    def __sigmoid(self, x):\r
+
+      \        return 1 / (1 + exp(-x))\r
+
+      \    \r
+
+      \    def __sigmoid_derivative(self, x):\r
+
+      \        return x * (1 - x)\r
+
+      \r
+
+      \    def dot(self, a, b):\r
+
+      \        # Ensure the matrices can be multiplied\r
+
+      \        if len(a) != len(b):\r
+
+      \            raise ValueError(\"Matrices cannot be multiplied\")\r
+
+      \r
+
+      \        # Initialize the result matrix with zeros\r
+
+      \        result = [[0 for _ in range(len(b))] for _ in range(len(a))]\r
+
+      \r
+
+      \        # Perform matrix multiplication\r
+
+      \        for i in range(len(a)):\r
+
+      \            for j in range(len(b)):\r
+
+      \                for k in range(len(b)):\r
+
+      \                    result[i][j] += a[i][k] * b[k][j]\r
+
+      \r
+
+      \        return result\r
+
+      \    \r
+
+      \    def think(self, inputs):\r
+
+      \        # Pass inputs through our neural network (our single neuron).\r
+
+      \        return self.__sigmoid(dot(inputs, self.synaptic_weights))\r
 
       \r
 

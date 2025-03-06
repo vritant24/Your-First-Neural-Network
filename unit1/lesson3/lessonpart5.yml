@@ -1,0 +1,100 @@
+# yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
+id: lessonpart5
+title: Add a train function
+content: >
+  ### What is the `train` Method?
+
+
+  The `train` method is like a learning process for our neural network. Just
+  like how you practice math problems to get better at them, the neural network
+  practices with data to improve its predictions.
+
+
+  ### How Does It Work?
+
+
+  **Inputs and Outputs**: The neural network takes in some examples (inputs) and
+  the correct answers (outputs) for those examples. This is like a teacher
+  giving you practice problems and the answers.
+
+
+  **Iterations**: The method runs many times (iterations) to help the neural
+  network learn better. Think of it as practicing the same math problems over
+  and over until you get really good at them.
+
+
+  **Making Predictions**: In each iteration, the neural network makes
+  predictions based on the inputs. This is like you trying to solve the math
+  problems.
+
+
+  **Calculating Error**: The neural network then checks how far its predictions
+  are from the correct answers. This difference is called the error. It's like
+  checking your answers against the correct ones to see how many you got wrong.
+
+
+  **Adjusting Weights**: The neural network adjusts its "weights" to reduce the
+  error. Weights are like the importance given to each input. Adjusting them is
+  like changing your approach to solving the problems based on the mistakes you
+  made.
+
+
+  **Repeating**: The neural network repeats this process many times, each time
+  getting better at making predictions.
+
+
+
+
+  For another example, imagine you are learning to throw a basketball into a
+  hoop. Each time you throw (iteration), you see if you made it (prediction). If
+  you miss (error), you adjust your aim (weights) and try again. After many
+  tries, you get better at making the shot.
+
+
+
+
+  ## Time to code
+
+
+  Add the following function to your class
+
+
+  ```
+
+  def train(self, training_set_inputs, training_set_outputs,
+  number_of_training_iterations):
+      for iteration in xrange(number_of_training_iterations):
+          output = self.think(training_set_inputs)
+          error = training_set_outputs - output
+          adjustment = self.dot(training_set_inputs.T, error * self.__sigmoid_derivative(output))
+          self.synaptic_weights += adjustment
+  ```
+
+
+
+
+  **Inputs and Outputs**: `training_set_inputs` and `training_set_outputs` are
+  the examples and correct answers.
+
+
+  **Iterations**: `number_of_training_iterations` is the number of times the
+  method runs.
+
+
+  **Making Predictions**: `output = self.think(training_set_inputs)` makes
+  predictions.
+
+
+  **Calculating Error**: `error = training_set_outputs - output` calculates the
+  difference between predictions and correct answers.
+
+
+  **Adjusting Weights**: `adjustment = self.dot(training_set_inputs.T, error *
+  self.__sigmoid_derivative(output))` calculates how much to adjust the weights.
+
+
+  **Updating Weights**: `self.synaptic_weights += adjustment` updates the
+  weights to improve predictions.
+showEditor: true
+editors:
+  - course1/unit1/lesson3/lessonpart5/build5.py
