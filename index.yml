@@ -60,7 +60,9 @@ files:
 
       \    "
   - path: course1/unit1/lesson3/lessonpart5/build5.py
-    content: "from math import exp, random\r
+    content: "import random\r
+
+      from math import exp\r
 
       \r
 
@@ -182,7 +184,9 @@ files:
 
       \    "
   - path: course1/unit1/lesson3/lessonpart7/final.py
-    content: "from math import exp, random\r
+    content: "import random\r
+
+      from math import exp\r
 
       \r
 
