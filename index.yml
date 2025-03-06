@@ -135,5 +135,61 @@ files:
       \    "
   - path: course1/unit1/lesson2/lessonpart1/exponents.py
     content: "# add your code here"
+  - path: course1/unit1/lesson3/lessonpart6/build5.py
+    content: "from math import exp\r
+
+      \r
+
+      class NeuralNetwork():\r
+
+      \    def __init__(self):\r
+
+      \        print(\"initialized class\")\r
+
+      \r
+
+      \    def __sigmoid(self, x):\r
+
+      \        return 1 / (1 + exp(-x))\r
+
+      \    \r
+
+      \    def __sigmoid_derivative(self, x):\r
+
+      \        return x * (1 - x)\r
+
+      \r
+
+      \    def dot(self, a, b):\r
+
+      \        # Ensure the matrices can be multiplied\r
+
+      \        if len(a) != len(b):\r
+
+      \            raise ValueError(\"Matrices cannot be multiplied\")\r
+
+      \r
+
+      \        # Initialize the result matrix with zeros\r
+
+      \        result = [[0 for _ in range(len(b))] for _ in range(len(a))]\r
+
+      \r
+
+      \        # Perform matrix multiplication\r
+
+      \        for i in range(len(a)):\r
+
+      \            for j in range(len(b)):\r
+
+      \                for k in range(len(b)):\r
+
+      \                    result[i][j] += a[i][k] * b[k][j]\r
+
+      \r
+
+      \        return result\r
+
+      \    "
 units:
   - unit1/index.yml
