@@ -1,7 +1,89 @@
 # yaml-language-server: $schema=https://vscodeedu.com/assets/schema/course-v2.schema.json
 id: lessonpart6
 title: Add a Think Function
-content: "# Enter your content here"
+content: >+
+  ### What is the `think` Function?
+
+
+  The `think` function is like the brain of our neural network. It helps the
+  neural network make decisions or predictions based on the inputs it receives.
+
+
+  ### How Does the `think` Function Work?
+
+
+  **Inputs**: The neural network takes in some inputs. These inputs can be
+  numbers or data that we want the network to learn from.
+
+
+  **Synaptic Weights**: The inputs are then multiplied by something called
+  synaptic weights. Think of synaptic weights as the importance given to each
+  input. Some inputs might be more important than others.
+
+
+  **Sigmoid Function**: After multiplying the inputs by the synaptic weights,
+  the result is passed through the sigmoid function. The sigmoid function
+  squishes the result into a value between 0 and 1. This helps the neural
+  network make a decision.
+
+
+  ### What are Synaptic Weights?
+
+
+  Synaptic weights are like the settings or adjustments that the neural network
+  makes to improve its predictions. They determine how much influence each input
+  has on the final decision.
+
+
+  ### Example
+
+
+  Imagine you are trying to decide whether to wear a jacket. You have three
+  inputs: temperature, wind speed, and whether it's raining. Each of these
+  inputs has a different importance (synaptic weight). For example, if it's
+  raining, that might be very important (high weight), while wind speed might be
+  less important (low weight).
+
+
+  The `think` function takes these inputs, multiplies them by their weights, and
+  then uses the sigmoid function to decide whether you should wear a jacket or
+  not.
+
+
+
+
+  ## Time to code
+
+
+  Modify the import in the python file
+
+
+  ```
+
+  from math import exp, random
+
+  ```
+
+
+  Set up synaptic weights in the constructor
+
+
+  ```
+
+  self.synaptic_weights = 2 * random.random((3, 1)) - 1
+
+  ```
+
+
+  Add the think function to the class
+
+
+  ```
+
+  def think(self, inputs):
+      return self.__sigmoid(self.dot(inputs, self.synaptic_weights))
+  ```
+
 showEditor: true
 editors:
   - course1/unit1/lesson3/lessonpart6/build5.py
